@@ -1,0 +1,7 @@
+#!/usr/bin/php
+<?php
+
+require 'vendor/autoload.php';
+
+$speaker = createSpeaker();
+$speaker->speak(filter_var($argv[1], FILTER_SANITIZE_STRING));
