@@ -1,0 +1,26 @@
+{
+    "name": "cviniciussdias/php-text-to-speech",
+    "description": "A simple PHP tool that uses each OS text-to-speech CLI",
+    "type": "library",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "Vinicius Dias",
+            "email": "carlosv775@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CViniciusSDias\\TextToSpeech\\": "src/"
+        },
+        "files": [
+            "src/factory.php"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "require": {
+        "ext-com_dotnet": "*"
+    }
+}
