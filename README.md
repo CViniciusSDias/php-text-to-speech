@@ -4,6 +4,23 @@ This library is a simple tool to make your computer speak whatever you want.
 
 The tool uses the CLI tool for Linux and Mac, and COM object SAPI.SpVoice for Windows.
 
+## Usage
+
+To simply make your computer speak, you can directly run:
+```bash
+$ php vendor/bin/speak "Text you want it to speak"
+```
+
+If you want to use this library in your code, it's as simple as:
+```php
+<?php
+
+require 'vendor/autoload.php';
+
+$speaker = createSpeaker();
+$speaker->speak('Text you want it to speak');
+```
+
 ## Requirements
 
 ### Windows
