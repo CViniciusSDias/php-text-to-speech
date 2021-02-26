@@ -23,6 +23,8 @@ $speaker->speak('Text you want it to speak');
 
 ## Requirements
 
+This library needs PHP 8 or greater.
+
 ### Windows
 
 [COM extension](https://www.php.net/manual/en/book.com.php). Just add `extension=com_dotnet` to your `php.ini` file and you should be good.

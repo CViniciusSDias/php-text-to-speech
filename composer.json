@@ -17,6 +17,9 @@
             "src/factory.php"
         ]
     },
+    "require": {
+        "php": ">=8.0"
+    },
     "bin": [
         "speak"
     ]
