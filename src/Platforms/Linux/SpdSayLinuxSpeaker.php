@@ -10,7 +10,7 @@ class SpdSayLinuxSpeaker implements Speaker
 {
     public function speak(string $text): void
     {
-        exec('spd-say ' . escapeshellarg($text), result_code: $resultCode);
+        exec('spd-say ' . escapeshellarg($text), $output, $resultCode);
 
         if ($resultCode !== 0) {
             throw new \RuntimeException('Error executing spd-say command');
