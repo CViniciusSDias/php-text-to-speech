@@ -9,7 +9,7 @@ function createSpeaker(): Speaker
 {
     $createLinuxSpeaker = function(): Speaker
     {
-        if (is_executable(exec("which say-spd"))) {
+        if (is_executable(exec("which spd-say"))) {
             return new SpdSayLinuxSpeaker();
         }
 
